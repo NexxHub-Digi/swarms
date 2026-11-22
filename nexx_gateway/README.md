@@ -116,6 +116,6 @@ The service-to-service token belongs in the caller backend's secret manager; nev
 ## Tests
 
     pip install -r nexx_gateway/requirements.txt pytest httpx
-    pytest -q nexx_gateway/tests
+    python -m pytest -q nexx_gateway/tests
 
 Tests inject a fake runner, so they check project credentials, workflow permissions, schema validation, rate limiting, output truncation and failure sanitization without model charges. Passing these tests is NOT live model-provider verification.
