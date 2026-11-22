@@ -20,4 +20,4 @@ jobs:
           python-version: '3.11'
       - run: python -m pip install -r nexx_gateway/requirements.txt pytest httpx
       - run: python -m compileall -q nexx_gateway
-      - run: pytest -q nexx_gateway/tests
+      - run: python -m pytest -q nexx_gateway/tests
